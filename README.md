@@ -1,7 +1,10 @@
 # Laravel Task Scheduler
-
+A Laravel project that showcases task scheduling and artisan commands. It includes a users table with essential fields, a factory and seeder for generating 50,000 users, and an artisan command to export user data to CSV files (limited to 10,000 users per file). The project also implements a scheduler to run the export command weekly.
 ## Overview
 A Laravel project that demonstrates task scheduling and artisan commands. This application features a user management system with the ability to generate a large dataset and export it efficiently.
+
+## LICENSE
+This project is open-sourced software licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Features
 - **Users Table**: Manages user details (name, email, phone, password).
