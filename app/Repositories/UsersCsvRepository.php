@@ -32,7 +32,8 @@ class UsersCsvRepository
         $path = self::generateDir();
 
         $index = 0;
-        // use each for loop all users and create a CSV file for each 10,000 users
+
+        // Chunk the users and write them to CSV files
         User::select('name', 'email', 'phone')->chunk(10000, function ($users) use (&$index, $path) {
             $index++;
             $file_name = $path . '/users-batch-' . $index . '.csv';
