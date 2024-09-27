@@ -37,3 +37,7 @@ This project is open-sourced software licensed under the [GNU General Public Lic
    ```bash
    php artisan export:users
    ```
+   
+> **Note/Disclaimer**: The export command will generate multiple CSV files, each containing 10,000 users. 
+> If your pc is slow, you can reduce the number of users to be generated in the `UserSeeder.php` file.
+> I will update the command to allow the user to specify the number of users to be generated in the future.
